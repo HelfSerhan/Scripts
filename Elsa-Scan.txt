@@ -3,6 +3,7 @@ ob_start();
 /*
 By Helf Serhan 27/10/2016 - 23:58 
 */
+// Turn off all error reporting
 error_reporting(0);
 echo "  <p dir='ltr' align='center'><u><b><font size='4'>XFN-IDS<br>";
 echo "<font color='#FF0000'>Ransomware Connection Detected</font></font></b></p>";
