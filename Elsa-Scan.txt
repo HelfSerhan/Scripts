@@ -62,5 +62,5 @@
                 $headers .= 'From: <XFN-IDS@XFN-IDS>' . "\r\n";
                 mail($to, $subject, $variable, $headers);
       }
-      cexec('cd /tmp && rm Alert.log');
+      exec('cd /tmp && rm Alert.log');
 ?>
