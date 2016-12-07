@@ -55,7 +55,7 @@
                           }
                 }
                 $variable = ob_get_clean();
-                $subject  = "Ransomware Connection Detected";
+                 subject  = "Ransomware Connection Detected";
                 $to       = "example@XFN-IDS";
                 $headers  = "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
