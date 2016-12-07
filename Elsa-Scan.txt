@@ -10,7 +10,7 @@
       $dateTime_F      = str_replace(' ', "", $date_past);
       $Alerts          = '"\"Ransomware\"' . " start:\"$dateTime_F\"\"  ";
       $Json            = ' | jq "."';
-      $output          = shell_exec("sh /opt/elsa/contrib/securityonion/contrib/cli.sh   {$Alerts} {$Json} > /tmp/Alert.log ");
+      //$output          = shell_exec("sh /opt/elsa/contrib/securityonion/contrib/cli.sh   {$Alerts} {$Json} > /tmp/Alert.log ");
       $string          = file_get_contents("/tmp/Alert.log");
       $json_a          = json_decode($string, true);
       $recordsReturned = ($json_a['recordsReturned']);
